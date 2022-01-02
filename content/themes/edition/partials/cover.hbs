@@ -6,15 +6,15 @@
     <div class="cover-content container">
         {{#if @site.description}}
             <div class="cover-description">
-                {{#if @custom.email_signup_text}}
+                {{!-- {{#if @custom.email_signup_text}}
                     {{@custom.email_signup_text}}
-                {{else}}
+                {{else}} --}}
                     {{@site.description}}
-                {{/if}}
+                {{!-- {{/if}} --}}
             </div>
         {{/if}}
 
-        {{#unless @member}}
+        {{!-- {{#unless @member}}
             <form class="form-wrapper cover-form" data-members-form>
                 <input class="auth-email" type="email" data-members-email placeholder="Your email address" required="true" autocomplete="false">
 
@@ -24,7 +24,7 @@
                     <span class="success">Email sent</span>
                 </button>
             </form>
-        {{/unless}}
+        {{/unless}} --}}
     </div>
 
     <button class="button-icon cover-arrow">
